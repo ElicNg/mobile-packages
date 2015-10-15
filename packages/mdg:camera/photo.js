@@ -1,4 +1,4 @@
-Session.setDefault('mdg:camera.language', 'en');
+Session.setDefault('mdg-camera-language', 'en');
 
 MeteorCamera = {};
 
@@ -32,6 +32,6 @@ MeteorCamera.strings = {
 
 Template.camera.helpers({
   strings: function () {
-    return MeteorCamera.strings[Session.get('mdg:camera.language')];
+    return MeteorCamera.strings[Session.get('mdg-camera-language')];
   }
 });
